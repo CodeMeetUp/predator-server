@@ -1,11 +1,14 @@
-// TODO: Add a new express router POST method
-// Router should return HTTP Status 200 with the data from the service
-// eg: {
-// "firebaseUid": "320dskadkladjfladf",
-// "email": "test@email.com",
-// "firtName": "John",
-// "lastName": "Doe"
+const express = require('express');
+const router = express.Router();
+const userService = require('../services/user.service');
+//
 
-// router.post('register', async (req, res, next) => {})
+router.post('/user', async (req, res) => {
+  const user = await userService.createUser(req.body);
+  return res.status(201).send(user);
+});
 
-// }
+// router.get('/user/:id/jobs', auth.verifyJWT, async(req, res) => {
+// })
+
+module.exports = router;
