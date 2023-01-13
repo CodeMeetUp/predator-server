@@ -1,0 +1,44 @@
+{
+  "name": "predator-server",
+  "version": "1.0.0",
+  "description": "Job Board Dashboard",
+  "main": "server.js",
+  "repository": "https://github.com/CodeMeetUp/predator-server.git",
+  "author": "Bismark Frimpong <bismark@vrai.com>",
+  "license": "MIT",
+  "engines": {
+    "node": "18.x",
+    "yarn": "*"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:dev": "node server.js",
+    "lint": "eslint ./",
+    "lint:fix": "eslint ./ --fix"
+  },
+  "dependencies": {
+    "compress": "^0.99.0",
+    "compression": "^1.7.4",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.4.1",
+    "helmet": "^6.0.1",
+    "mongoose": "^6.8.2",
+    "xss-clean": "^0.1.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.31.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-node": "^4.1.0",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-security": "^1.5.0",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.1.0",
+    "nodemon": "^2.0.20",
+    "prettier": "^2.8.1"
+  }
+}

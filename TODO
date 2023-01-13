@@ -1,0 +1,5 @@
+# Build a registration
+
+- Create a model of a user that we plan on storing into mongodb
+- Create a collections to store users in mongodb
+- 
